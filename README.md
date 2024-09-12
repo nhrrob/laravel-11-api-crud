@@ -1,66 +1,70 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://nazmulrobin.com" target="_blank"><img src="https://nazmulrobin.com/images/nhrblog-logo-white.png" width="200"></a></p>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<a href="https://github.com/nhrrob/laravel-11-api-crud/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/nhrrob/laravel-11-api-crud"></a>
+<a href="https://github.com/nhrrob/laravel-11-api-crud/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/nhrrob/laravel-11-api-crud"></a>
+<a href="https://github.com/nhrrob/laravel-11-api-crud/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nhrrob/laravel-11-api-crud"></a>
+<a href="https://github.com/nhrrob/laravel-11-api-crud/blob/master/LICENSE.md"><img alt="GitHub license" src="https://img.shields.io/github/license/nhrrob/laravel-11-api-crud"></a>
+
 </p>
 
-## About Laravel
+## Laravel 11 API Crud (Sanctum)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel 11 API Crud is a basic RESTful API crud app built with Laravel 11 and Sanctum. In this project a rest api created for managing product crud operations. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Features (API) include:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Laravel sanctum package
+- Authentication using sanctum
+- Logout to remove old tokens 
+- Create product.
+- List products.
+- Update product.
+- Delete product
+- Search By Title
+- Pagination link with json data
 
-## Learning Laravel
+This app created to help developers to get started with their api crud based apps.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Install
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Install commands:
+``` 
+- git clone https://github.com/nhrrob/laravel-11-api-crud.git 
+- composer update
+- add .env and update database settings
+- php artisan migrate:fresh --seed
+- php artisan serve
 
-## Laravel Sponsors
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Use Postman to test the API.
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Note
 
-## Contributing
+- Login: 
+    - URL: http://laravel-11-api-crud.rob/api/login 
+    - Method: POST
+    - Insert email and password: Body tab => x-www-form-urlencode
+    - Press Enter to get Bearer token;
+    - For future request add this token: 
+      <br>Authorization tab: Type => Bearer Token; Insert token.
+    
+- Insert/Update:
+    - Use Body tab => x-www-form-urlencode : Add title key and its value
+    - Another way: Body tab => raw : select json type 
+- Demo User (database/seeders/DatabaseSeeder.php): 
+<br> ```admin@admin.com/password```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel 11 Crud is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Contact
+
+Feel free to contact:  
+<a href="https://www.nazmulrobin.com/">nazmulrobin.com</a> | <a href="https://twitter.com/nhr_rob">Twitter</a> | <a href="https://www.linkedin.com/in/nhrrob/">Linkedin</a> | <a href="mailto:robin.sust08@gmail.com">Email</a>
