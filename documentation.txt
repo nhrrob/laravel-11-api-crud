@@ -1,0 +1,12 @@
+1. Init
+- laravel new laravel-11-api-crud
+- cd laravel-11-api-crud
+- composer require laravel/breeze --dev
+- php artisan breeze:install blade
+- npm run dev
+
+2. Added Seed on DatabaseSeeder.php (admin@admin.com/password)
+- php artisan migrate:fresh --seed
+
+3. Install crudgenerator
+4. Install Sanctum 
