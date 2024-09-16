@@ -23,3 +23,7 @@ require __DIR__.'/auth.php';
 Route::group([ 'namespace'=> '\App\Http\Controllers', 'prefix' => '',  'as'=>'', 'middleware' => 'auth' ], function () { 
   Route::resource('projects', 'ProjectController'); 
 });
+
+Route::group([ 'namespace'=> '\App\Http\Controllers\Admin', 'prefix' => 'admin',  'as'=>'admin.', 'middleware' => 'auth' ], function () { 
+  Route::resource('projects', 'ProjectController'); 
+});
