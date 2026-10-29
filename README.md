@@ -10,7 +10,7 @@
 
 ## Laravel 11 API Crud (Sanctum)
 
-Laravel 11 API Crud is a basic RESTful API crud app built with Laravel 11 and Sanctum. In this project a rest api created for managing product crud operations. 
+Laravel 11 API Crud is a basic RESTful API crud app built with Laravel 11 and Sanctum, and now runs on Laravel 13. In this project a rest api created for managing product crud operations. 
 
 Features (API) include:
 
